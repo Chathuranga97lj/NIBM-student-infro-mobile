@@ -26,7 +26,7 @@ class _HomeViewState extends State<HomeView> {
           Padding(padding: const EdgeInsets.all(10.0),
             child: Image.asset('assets/image/nibm.png'),
           ),
-          Text('Kurunegala Branch',
+          const Text('Kurunegala Branch',
           style: TextStyle(
             color: Color.fromRGBO(45, 68, 139, 1),
             fontSize: 30
@@ -44,7 +44,7 @@ class _HomeViewState extends State<HomeView> {
                 );
               },
              style: ElevatedButton.styleFrom(
-               primary: Color.fromRGBO(45, 68, 139, 1)
+               primary: const Color.fromRGBO(45, 68, 139, 1)
              ),
               child: const Center(
                 child: Text(
@@ -67,7 +67,7 @@ class _HomeViewState extends State<HomeView> {
                 );
               },
               style: ElevatedButton.styleFrom(
-                  primary: Color.fromRGBO(45, 68, 139, 1)
+                  primary: const Color.fromRGBO(45, 68, 139, 1)
               ),
               child: const Center(
                 child: Text(

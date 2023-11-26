@@ -4,14 +4,16 @@ class Register extends StatelessWidget {
   final TextEditingController usernameController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
+  Register({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Register'),
+        title: const Text('Register'),
         foregroundColor: Colors.white,
         centerTitle: true,
-        backgroundColor: Color.fromRGBO(45, 68, 139, 1),
+        backgroundColor: const Color.fromRGBO(45, 68, 139, 1),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -21,19 +23,19 @@ class Register extends StatelessWidget {
             Image.asset('assets/image/home.jpg', height: 150, width: 150),
             TextField(
               controller: usernameController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Username',
               ),
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             TextField(
               controller: passwordController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Password',
               ),
               obscureText: true,
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             ElevatedButton(
               onPressed: () {
                 // You can add your login logic here.
@@ -44,7 +46,7 @@ class Register extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                   primary: Color.fromRGBO(45, 68, 139, 1)
               ),
-              child: Text(
+              child: const Text(
                 'Register',
                 style: TextStyle(
                     color: Colors.white,
